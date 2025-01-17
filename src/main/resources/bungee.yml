@@ -2,5 +2,5 @@ name: VencitiServices
 version: '1.0-SNAPSHOT'
 main: com.venciti.proxy.Bungee
 authors: [ coulthard ]
-description: © 2025 venciti.com, Inc.
+description: ©2025 venciti.com, Inc.
 website: https://venciti.com
