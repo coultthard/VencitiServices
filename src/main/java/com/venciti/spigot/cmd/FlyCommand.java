@@ -1,7 +1,6 @@
 package com.venciti.spigot.cmd;
 
 import com.venciti.spigot.api.ActionBarAPI;
-import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
