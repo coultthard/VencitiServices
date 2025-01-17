@@ -1,0 +1,6 @@
+name: VencitiServices
+version: '1.0-SNAPSHOT'
+main: com.venciti.spigot.Services
+authors: [ coulthard ]
+description: © 2025 venciti.com, Inc.
+website: https://venciti.com
