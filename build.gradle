@@ -51,7 +51,14 @@ task copyJar(type: Copy) {
     include '**/*.jar'
 }
 
+task gitJar(type: Copy) {
+    from 'build/libs'
+    into 'jar'
+    include '**/*.jar'
+}
+
 build.finalizedBy(copyJar)
+build.finalizedBy(gitJar)
 
 jar {
     archiveVersion.set('')
