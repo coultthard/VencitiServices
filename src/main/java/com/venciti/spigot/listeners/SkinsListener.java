@@ -21,8 +21,10 @@ public class SkinsListener implements Listener {
         if (AuthAPI.isOriginal(player)){
             if (!SKIN_FAKE.contains(player)){
                 SkinAPI.apply(player, name);
+                player.sendMessage("player original");
             } else {
                 SkinAPI.apply(player, fakeName);
+                player.sendMessage("player original");
             }
         } else {
             if (!SKIN_FAKE.contains(player)){

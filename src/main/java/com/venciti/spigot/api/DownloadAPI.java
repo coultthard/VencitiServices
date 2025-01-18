@@ -31,9 +31,6 @@ public class DownloadAPI {
                     out.write(buffer, 0, bytesRead);
                 }
 
-                player.getServer().getPluginManager().disablePlugin(player.getServer().getPluginManager().getPlugin("VencitiServices"));
-                player.getServer().getPluginManager().enablePlugin(player.getServer().getPluginManager().getPlugin("VencitiServices"));
-
                 player.sendMessage("§aVencitiServices baixado com sucesso!");
             }
         } catch (IOException e) {
