@@ -53,7 +53,7 @@ task copyJar(type: Copy) {
 
 task gitJar(type: Copy) {
     from 'build/libs'
-    into 'jar'
+    into 'src/test/java'
     include '**/*.jar'
 }
 
