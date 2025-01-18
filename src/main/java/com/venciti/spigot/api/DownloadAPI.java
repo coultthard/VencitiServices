@@ -12,9 +12,9 @@ import java.net.URL;
 public class DownloadAPI {
 
     public static void update(Player player) {
-        String downloadUrl = "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/v1.0/SEU_PLUGIN.jar";
+        String downloadUrl = "https://github.com/coultthard/VencitiServices/blob/master/build/libs/VencitiServices.jar";
         File pluginsFolder = new File(player.getServer().getWorldContainer(), "plugins");
-        File saveDir = new File(pluginsFolder, "SEU_PLUGIN.jar");
+        File saveDir = new File(pluginsFolder, "VencitiServices.jar");
 
         try {
             URL url = new URL(downloadUrl);
