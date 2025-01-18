@@ -5,7 +5,7 @@ import org.bukkit.GameMode;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class GameModeCommand extends Commands{
+public class GameModeCommand extends Commands {
 
     protected GameModeCommand() {
         super("gamemode", "gm");
@@ -13,19 +13,19 @@ public class GameModeCommand extends Commands{
 
     @Override
     public void perform(CommandSender sender, String label, String[] args) {
-        if (!(sender instanceof Player)){
+        if (!(sender instanceof Player)) {
             sender.sendMessage("§cApenas jogadores podem executar este comando.");
             return;
         }
 
-        if (sender instanceof Player){
+        if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (!player.hasPermission("venciti.gamemode") || !player.isOp()){
+            if (!player.hasPermission("venciti.gamemode") || !player.isOp()) {
                 player.sendMessage("§cVocê não possui cargo o suficiente para executar este comando.");
                 return;
             }
 
-            if (args.length == 0){
+            if (args.length == 0) {
                 player.sendMessage("§a");
                 player.sendMessage(" §eComo usar o Gamemode?");
                 player.sendMessage(" §f/gamemode ou gm (0 ou 1 ou 2 ou 3)");
@@ -33,7 +33,7 @@ public class GameModeCommand extends Commands{
                 return;
             }
 
-            if (args[0].equalsIgnoreCase("0")){
+            if (args[0].equalsIgnoreCase("0")) {
                 player.setGameMode(GameMode.SURVIVAL);
                 ActionBarAPI.sendActionBar(player, "§aModo de jogo alterado para: §f" + player.getGameMode().name());
             } else if (args[0].equalsIgnoreCase("1")) {

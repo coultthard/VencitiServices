@@ -12,12 +12,12 @@ public class TitleAPI {
     /**
      * Envia uma mensagem de TitleAPI para um jogador específico.
      *
-     * @param player  O jogador para quem enviar a mensagem.
-     * @param title O titulo principal.
+     * @param player   O jogador para quem enviar a mensagem.
+     * @param title    O titulo principal.
      * @param subtitle O subtitulo.
-     * @param fadeIn O tempo para aparecer a mensagem em segundos.
-     * @param stay O tempo para a mensagem ficar na tela em segundos.
-     * @param fadeOut O tempo para desaparecer em segundos.
+     * @param fadeIn   O tempo para aparecer a mensagem em segundos.
+     * @param stay     O tempo para a mensagem ficar na tela em segundos.
+     * @param fadeOut  O tempo para desaparecer em segundos.
      */
     public static void sendTitle(Player player, String title, String subtitle, int fadeIn, int stay, int fadeOut) {
         PlayerConnection connection = ((CraftPlayer) player).getHandle().playerConnection;
@@ -38,11 +38,11 @@ public class TitleAPI {
     /**
      * Envia uma mensagem de TitleAPI para todos os jogadores no servidor.
      *
-     * @param title O titulo principal.
+     * @param title    O titulo principal.
      * @param subtitle O subtitulo.
-     * @param fadeIn O tempo para aparecer a mensagem em segundos.
-     * @param stay O tempo para a mensagem ficar na tela em segundos.
-     * @param fadeOut O tempo para desaparecer em segundos.
+     * @param fadeIn   O tempo para aparecer a mensagem em segundos.
+     * @param stay     O tempo para a mensagem ficar na tela em segundos.
+     * @param fadeOut  O tempo para desaparecer em segundos.
      */
     public static void broadcastTitle(String title, String subtitle, int fadeIn, int stay, int fadeOut) {
         for (Player player : Bukkit.getOnlinePlayers()) {

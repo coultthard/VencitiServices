@@ -10,7 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 public abstract class Commands extends Command {
 
     @Override
-    public boolean execute(CommandSender sender, String cmdLabel, String[] args){
+    public boolean execute(CommandSender sender, String cmdLabel, String[] args) {
         this.perform(sender, cmdLabel, args);
         return true;
     }
@@ -34,9 +34,17 @@ public abstract class Commands extends Command {
 
     }
 
-    public static void setup(){
+    public static void setup() {
         new GameModeCommand();
         new FlyCommand();
+        new InvseeCommand();
+        new OnlineCommand();
+        new PingCommand();
+        new StaffChatCommand();
+        new AdminCommand();
+        new TellCommand();
+        new ReplyCommand();
+        new FakeCommand();
     }
 
 }
