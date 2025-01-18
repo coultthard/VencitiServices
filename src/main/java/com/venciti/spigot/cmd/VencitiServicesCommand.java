@@ -32,6 +32,7 @@ public class VencitiServicesCommand extends Commands{
             player.sendMessage(" §eVencitiServirces");
             player.sendMessage(" §fCriador: §7" + autors);
             player.sendMessage("§e");
+            return;
         }
 
         if (args[0].equalsIgnoreCase("download")){
