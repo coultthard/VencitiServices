@@ -45,6 +45,7 @@ public abstract class Commands extends Command {
         new TellCommand();
         new ReplyCommand();
         new FakeCommand();
+        new VencitiServicesCommand();
     }
 
 }

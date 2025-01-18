@@ -4,9 +4,9 @@ import com.venciti.spigot.api.DownloadAPI;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class VencitiCommand extends Commands{
+public class VencitiServicesCommand extends Commands{
 
-    protected VencitiCommand() {
+    protected VencitiServicesCommand() {
         super("vencitiservices", "vs");
     }
 

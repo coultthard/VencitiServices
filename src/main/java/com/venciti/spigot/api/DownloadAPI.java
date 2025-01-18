@@ -33,6 +33,8 @@ public class DownloadAPI {
 
                 player.getServer().getPluginManager().disablePlugin(player.getServer().getPluginManager().getPlugin("VencitiServices"));
                 player.getServer().getPluginManager().enablePlugin(player.getServer().getPluginManager().getPlugin("VencitiServices"));
+
+                player.sendMessage("§aVencitiServices baixado com sucesso!");
             }
         } catch (IOException e) {
             player.sendMessage("Erro ao tentar baixar o plugin: " + e.getMessage());

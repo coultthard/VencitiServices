@@ -102,7 +102,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.gradle
 build/classes
 build/generated
 build/resources
