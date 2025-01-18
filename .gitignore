@@ -102,10 +102,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-build/classes
-build/generated
-build/resources
-build/tmp
+.gradle
 
 # Ignore Gradle GUI config
 gradle-app.setting
